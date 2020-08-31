@@ -10,3 +10,4 @@ Data Structures and Algorithms using Java
   * [Binary Search](https://github.com/Shaikvaseemnaazleen/dsa_java/blob/master/Search/BinarySearch.java)
 * [Sorting](https://github.com/Shaikvaseemnaazleen/dsa_java/tree/master/Sorting)
   * [Bubble Sort](https://github.com/Shaikvaseemnaazleen/dsa_java/blob/master/Sorting/BubbleSort.java)
+  * [Selection Sort](https://github.com/Shaikvaseemnaazleen/dsa_java/blob/master/Sorting/Selectionsort.java)
