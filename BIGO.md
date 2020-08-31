@@ -13,6 +13,9 @@ nested loops
 * Iterating through half a collection is still O(n)
 * Two separate collections: O(a * b)
 
+![bigo](https://user-images.githubusercontent.com/54474853/91721440-60dea280-ebb6-11ea-97de-df66bb5f592a.JPG)
+
+
 ## What can cause time in a function?
 Operations (+, -, *, /)
 Comparisons (<, >, ==)
