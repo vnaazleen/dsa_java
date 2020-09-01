@@ -36,3 +36,95 @@ These are modren techniques which makes use of RAM and very fast. There are lot 
 | Shell sort | sorting pairs of elements **far-apart** from eachother, then progressively reducing the gap b/n elements compared| n ^2 | nlogn|
 | Merge sort     | Split the full array into sub arrays then **merge** those sub arrays back together in the correct order| nlogn | nlogn |
 | Quick sort     | choose a **pivot**, partition the array based on pivot at last pivot is in sorted psoition then recursively apply thus to sub arrays|  O(n^2) | O(n*log n) |
+
+
+## Bubble sort :
+
+This algorithm is called bubble sort, where large values “bubble” to the right.
+
+### pseudocode 1:
+
+<pre>Repeat n–1 times
+     For i from 0 to n–2
+        If i'th and i+1'th elements out of order
+            Swap them</pre>
+
+##### Time complexity : O(n ^ 2) (Both Best & Worst case scenarios)
+
+* Since we are comparing the i'th and i+1'th element, we only need to go up to n – 2 for i. Then, we swap the two elements if they’re out of order.
+* And we can stop after we’ve made n – 1 passes, since we know the largest n–1 elements will have bubbled to the right.
+* We have n – 2 steps for the inner loop, and n – 1 loops, so we get n2 – 3n + 2 steps total. But the largest factor, or dominant term, is n2, as n gets larger and larger, so we can say that bubble sort is O(n2).
+
+### pseudocode 2:
+
+Set swap counter to non-zero value
+<pre>Repeat until the swap counter is 0:
+  Reset swap counter to 0
+     Look at each adjacent pair 
+     If two adjacent elements are not in order, swap them and add one to the swap counter</pre>
+
+
+#### Worst-case scenario: 
+
+The array is in reverse order, we have to 'bubble' each of the n elements all the the way across the array, and since we can only fully bubble one element into position per pass, we must do this n times.
+
+##### Time complexity : O(n ^ 2) 
+
+#### Best-case scenario: 
+
+The array is already perfectly sorted, and we make no swaps on the first pass.
+
+##### Time complexity : Ω(1) 
+
+## Selection sort:
+
+* First, we’ll look at each number, and remember the smallest one we’ve seen. Then, we can swap it with the first number in our list, since we know it’s the smallest
+* Now we know at least the first element of our list is in the right place, so we can look for the smallest element among the rest, and swap it with the next unsorted element (now the second element)
+* We can repeat this over and over, until we have a sorted list.This algorithm is called selection sort
+
+### psuedocode:
+
+<pre>
+For i from 0 to n–1
+   Find smallest item between i'th item and last item
+   Swap smallest item with i'th item
+</pre>
+
+#### Worst-case scenario:
+
+We have to iterate over each of the n elements of the array (to fnd the smallest unsorted elemnt ) and we must repeat this process n times, since only one elements gets sorted on each process.
+
+##### Time complexity : O(n ^ 2) 
+
+#### Best-case scenario:
+
+Exactly, the same! There's no way to guarantee the array is sorted until we go through this process for all the elements.
+
+##### Time complexity : Ω(n ^ 2) 
+
+## Insertion sort:
+
+* It is a in-place comparison based sorting algorithm.
+* We begin by assuming that a list with one item (position 0) is already sorted. On each pass, one for each item 1 through n−1, the current item is checked against those in the already sorted sublist. As we look back into the already sorted sublist, we shift those items that are greater to the right. When we reach a smaller item or the end of the sublist, the current item can be inserted.
+
+### pseudocode
+
+<pre>
+Call the first element of the array sorted
+Repeat until all elements are sorted:
+     Look at the next unsorted element. Insert into the "Sorted" portion by shifting the requisite number of elements.
+</pre>
+
+#### Worst-case scenario:
+
+The array is in reverse order; we have to shift each of the n elements n positions each time we make a insertion.
+
+##### Time complexity : O(n ^ 2)
+
+#### Best-case scenario:
+
+The array is already perfectly sorted, and we simply keep moving the line between "unsorted" and "sorted" as we keep examine each element.
+
+##### Time complexity : Ω(n)
+
+
