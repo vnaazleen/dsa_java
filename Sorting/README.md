@@ -128,6 +128,42 @@ The array is already perfectly sorted, and we simply keep moving the line betwee
 ##### Time complexity : Ω(n)
 
 
+## Shell sort:
+
+* inplace-sorting algorithm
+* The method starts by sorting pairs of elements far apart from each other, Then progressively reducing the gap between elements compared.
+* By starting with far apart elements. It can move some out of place elements into positions faster than a simple nearest neighbour echange
+* Running time of shell sort is heavily dependent on the gap.
+
+### pseudocode:
+
+<pre> 
+foreach (gap in gaps)
+{
+     for (i = gap; i < n; i += 1)
+     {
+        temp = a[i]
+        for (j = i; j >= gap and a[j - gap] > temp; j -= gap)
+        {
+            a[j] = a[j - gap]
+        }
+        a[j] = temp
+     }
+}
+</pre>
+
+#### Worst-case scenario:
+
+this case occurs for N equal to a power of two when elements greater and smaller than the median occupy odd and even positions respectively, since they are compared only in the last pass.
+
+##### Time complexity : O(n ^ 2)
+
+#### Best-case scenario:
+
+When array is already sorted.
+
+##### Time complexity : Ω(n log n)
+
 ## Merge Sort :
 
 * In merge sort, the idea of algorithm is to sort smaller arrays and then combine those arrays together ( merge them ) in sorted order.
