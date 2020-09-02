@@ -128,3 +128,27 @@ The array is already perfectly sorted, and we simply keep moving the line betwee
 ##### Time complexity : Ω(n)
 
 
+## Merge Sort :
+
+* In merge sort, the idea of algorithm is to sort smaller arrays and then combine those arrays together ( merge them ) in sorted order.
+* Merge sort is based on recursion.
+
+### pseudocode
+
+<pre>
+Sort the left half of the array ( assuming n > 1 )
+Sort the right half of the array ( assuming n > 1 )
+Merge the two halfs together.
+</pre>
+
+#### Worst-case scenario:
+
+We have to split n elements up and hen recombine them, effectively doubling the sorted subarrays as we build them up
+
+##### Time complexity : O(n log n)
+
+#### Best-case scenario:
+
+Even the array is sorted, we have to split and recombine it together with this algorithm
+
+##### Time complexity : Ω(n log n)
