@@ -12,3 +12,5 @@ Data Structures and Algorithms using Java
   * [Bubble Sort](https://github.com/Shaikvaseemnaazleen/dsa_java/blob/master/Sorting/BubbleSort.java)
   * [Selection Sort](https://github.com/Shaikvaseemnaazleen/dsa_java/blob/master/Sorting/Selectionsort.java)
   * [Insertion Sort](https://github.com/Shaikvaseemnaazleen/dsa_java/blob/master/Sorting/InsertionSort.java)
+  * [Shell Sort](https://github.com/Shaikvaseemnaazleen/dsa_java/blob/master/Sorting/ShellSort.java)
+  * [Merge Sort](https://github.com/Shaikvaseemnaazleen/dsa_java/blob/master/Sorting/MergeSort.java)
