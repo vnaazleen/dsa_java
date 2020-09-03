@@ -6,9 +6,7 @@ public class CountingSort {
 	public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        // Input range
-        System.out.print("Enter range of the array elements: ");
-        int r = in.nextInt();
+        r = -1;
 
         // Input size
         System.out.print("Enter size of the array: ");
@@ -19,6 +17,9 @@ public class CountingSort {
         System.out.println("Enter the array elements (one by one): ");
         for (int i = 0; i < n; ++i) {
             arr[i] = in.nextInt();
+	    if (r < arr[i]) {
+                r = arr[i];
+            }
         }
 
         // Apply countingSort sort algo
