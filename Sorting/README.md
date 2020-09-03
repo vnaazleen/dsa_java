@@ -164,6 +164,29 @@ When array is already sorted.
 
 ##### Time complexity : Ω(n log n)
 
+## Counting sort:
+Counting sort, it is an integer sorting algorithm, it is based on keys between specific range. It works by counting the number of objects having distinct key values. Then doing some arithmetic to calculate the position of each object in the output sequence.
+
+### psuedocode:
+
+```
+count = array of k+1 zeros
+for x in input do
+    count[key(x)] += 1
+
+total = 0
+for i in 0, 1, ... k do
+    count[i], total = total, count[i] + total
+
+output = array of the same length as input
+for x in input do
+    output[count[key(x)]] = x
+    count[key(x)] += 1 
+
+return output
+```
+#### Time complexity : O(n + k)
+
 ## Merge Sort :
 
 * In merge sort, the idea of algorithm is to sort smaller arrays and then combine those arrays together ( merge them ) in sorted order.
