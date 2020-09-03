@@ -58,6 +58,21 @@ class Array {
     	return -1;
     }
     
+    // Returns true if elem is in array else false
+    public boolean contains(int number) {
+    	for (int i = 0; i < numItems; ++i) {
+    		if (arr[i] == number) {
+    			return true;
+    		}
+    	}
+    	return false;
+    }
+    
+    // Returns the size of array
+    public int size() {
+    	return numItems;
+    }
+    
     public int min() {
     	int mi = Integer.MAX_VALUE;
     	for (int i = 0; i < numItems; ++i) {
@@ -84,35 +99,5 @@ class Array {
             System.out.print(arr[i] + " ");
         }
         System.out.println();
-    }
-
-    // Driver code
-    public static void main(String[] args) {
-    	Array a = new Array(5);
-        a.insert(10);   // Array: 10 
-        a.print();
-        a.insert(20);   // Array: 10 20 
-        a.print();
-        a.insert(30);   // Array: 10 20 30 
-        a.print();
-        a.insert(40);   // Array: 10 20 30 40
-        a.print();
-        a.insert(50);   // Array: 10 20 30 40 50
-        a.print();
-        a.insert(60);   // Array: 10 20 30 40 50 60
-        a.print();
-        a.removeAt(5);  // Array: 10 20 30 40 50
-        a.print();
-        a.removeAt(2);  // Array: 10 20 40 50
-        a.print();
-        //a.removeAt(7); // Throws exception
-        a.insert(30, 2);   // Array: 10 20 30 40 50
-        a.print();
-        
-        System.out.println("Index of" + 40 + " is : " + a.indexOf(40));   // 3
-        System.out.println("Index of" + 100 + " is : " + a.indexOf(100)); // -1
-        
-        System.out.println("Minimum value in Array: " + a.min());   // 10
-        System.out.println("Maximum value in Array: " + a.max());   // 20
     }
 }
