@@ -1,5 +1,3 @@
-package mid1;
-
 class Array {
     private int size;
     private int numItems = 0;
@@ -48,6 +46,16 @@ class Array {
             }
             arr[--numItems] = 0;
         }
+    }
+    
+    // Returns index of given element
+    public int indexOf (int number) {
+    	for (int i = 0; i < numItems; ++i) {
+    		if (arr[i] == number) {
+    			return i;
+    		}
+    	}
+    	return -1;
     }
     
     public int min() {
@@ -100,6 +108,10 @@ class Array {
         //a.removeAt(7); // Throws exception
         a.insert(30, 2);   // Array: 10 20 30 40 50
         a.print();
+        
+        System.out.println("Index of" + 40 + " is : " + a.indexOf(40));   // 3
+        System.out.println("Index of" + 100 + " is : " + a.indexOf(100)); // -1
+        
         System.out.println("Minimum value in Array: " + a.min());   // 10
         System.out.println("Maximum value in Array: " + a.max());   // 20
     }
