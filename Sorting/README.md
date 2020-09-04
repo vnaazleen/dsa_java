@@ -211,3 +211,38 @@ We have to split n elements up and hen recombine them, effectively doubling the 
 Even the array is sorted, we have to split and recombine it together with this algorithm
 
 ##### Time complexity : Ω(n log n)
+
+## Quick sort
+
+* Comparison based sorting algorithm.
+* Inplace & Efficient in practice.
+
+### pseudocode:
+```
+QuickSort(A, l, r):
+     if l >= r:
+	return
+     m <- Partition(A, l, r)
+     //A[m] is in the final position}
+     QuickSort(A, l, m-1)
+     QuickSort(A, m+1, r)
+```
+#### Partitioning: example
+
+* the pivot is x = A[l]
+* move i from l+1 to r maintaining the following invariant:
+	* A[k] <= x for all l + 1 < k <= j
+	* A[k] > x for all j + 1 <= k <= i
+
+```
+Partition(A, l, r)
+    x <- A[l]
+    j <- l
+    for i from l + r to r:
+	if A[i] <= x:
+	    j <- j + 1
+	    swap A[j] and A[i]
+	    // A[l + 1..j] <= x, A[j + 1..i] > x
+     swap A[l] and A[j]
+     return j	 	
+```
