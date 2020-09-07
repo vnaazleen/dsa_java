@@ -15,3 +15,4 @@ Data Structures and Algorithms using Java
   * [Shell Sort](https://github.com/Shaikvaseemnaazleen/dsa_java/blob/master/Sorting/ShellSort.java)
   * [Merge Sort](https://github.com/Shaikvaseemnaazleen/dsa_java/blob/master/Sorting/MergeSort.java)
   * [Counting Sort](https://github.com/Shaikvaseemnaazleen/dsa_java/blob/master/Sorting/CountingSort.java)
+  * [Quick Sort](https://github.com/Shaikvaseemnaazleen/dsa_java/blob/master/Sorting/QuickSort.java)
