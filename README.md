@@ -16,3 +16,5 @@ Data Structures and Algorithms using Java
   * [Merge Sort](https://github.com/Shaikvaseemnaazleen/dsa_java/blob/master/Sorting/MergeSort.java)
   * [Counting Sort](https://github.com/Shaikvaseemnaazleen/dsa_java/blob/master/Sorting/CountingSort.java)
   * [Quick Sort](https://github.com/Shaikvaseemnaazleen/dsa_java/blob/master/Sorting/QuickSort.java)
+ * [Stack](https://github.com/vnaazleen/dsa_java/tree/master/Stack)
+   * [Array Implementation](https://github.com/vnaazleen/dsa_java/blob/master/Stack/StackArray.java)
