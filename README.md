@@ -1,7 +1,7 @@
 # Data structures and Algorithms
 Data Structures and Algorithms using Java
 
-## Assignemts
+## Assigments
  * [Assignment-1](https://github.com/vnaazleen/dsa_java/tree/master/Assignments/Assignment1)
 
 ## Table of contents
