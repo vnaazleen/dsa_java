@@ -24,3 +24,4 @@ Data Structures and Algorithms using Java
    * [Infix to Postfix](https://github.com/vnaazleen/dsa_java/blob/master/Stack/InfixToPostfix.java)
    * [Infix to Prefix](https://github.com/vnaazleen/dsa_java/blob/master/Stack/InfixToPrefix.java)
    * [Evaluating Postfix expression](https://github.com/vnaazleen/dsa_java/blob/master/Stack/EvaluatingPostfixExpression.java)
+   * [Balanced Brackets](https://github.com/vnaazleen/dsa_java/blob/master/Stack/BalancedBrackets.java)
