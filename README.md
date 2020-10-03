@@ -26,4 +26,4 @@ Data Structures and Algorithms using Java
    * [Evaluating Postfix expression](https://github.com/vnaazleen/dsa_java/blob/master/Stack/EvaluatingPostfixExpression.java)
    * [Balanced Brackets](https://github.com/vnaazleen/dsa_java/blob/master/Stack/BalancedBrackets.java)
  * [Queue](https://github.com/vnaazleen/dsa_java/blob/master/Queue/)
-   * [Queues Array Implementation](https://github.com/vnaazleen/dsa_java/blob/master/Queue/Queue.java)
+   * [Array Implementation](https://github.com/vnaazleen/dsa_java/blob/master/Queue/Queue.java)
