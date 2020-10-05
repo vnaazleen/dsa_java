@@ -27,3 +27,4 @@ Data Structures and Algorithms using Java
    * [Balanced Brackets](https://github.com/vnaazleen/dsa_java/blob/master/Stack/BalancedBrackets.java)
  * [Queue](https://github.com/vnaazleen/dsa_java/blob/master/Queue/)
    * [Array Implementation](https://github.com/vnaazleen/dsa_java/blob/master/Queue/Queue.java)
+   * [Circular Queue](https://github.com/vnaazleen/dsa_java/blob/master/Queue/CircularQueue.java)
