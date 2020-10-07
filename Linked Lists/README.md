@@ -5,8 +5,10 @@ where the linear order is maintained by means of links or pointers.
 
 ## Linked List vs Arrays
 * Like arrays, linked list is a linear data structure
+* Unlike arrays, linked list have dynamic size
+* Unlike arrays, random access is not allowed
 * Unlike arrays, linked list elements are not stored at the contiguous location
-the elements are linked using pointers.
+the elements are linked using pointers
 
 ## Types of linked list
 * Singly Linked List
