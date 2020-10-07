@@ -1,0 +1,24 @@
+# Linked List
+
+A linked list is an ordered collection of finite, homogenous data elements called nodes
+where the linear order is maintained by means of links or pointers.
+
+## Types of linked list
+* Singly Linked List
+* Doubly Linked List
+* Circular Linked List
+
+
+## Operations
+* **Insertion** of a node into a list
+* **Deletion** of a node from a list
+* **Copy** a linked list to make a duplicates
+* **Merging** two linkedlists into a larger list
+* **Traversing** 
+## Insertion of a node
+* Get a new node from memory block
+* Start from the header node
+* Manage links to
+	* Insert at front
+	* Insert at end
+	* Insert at any position
