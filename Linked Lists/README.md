@@ -22,6 +22,7 @@ the elements are linked using pointers
 * **Copy** a linked list to make a duplicates
 * **Merging** two linkedlists into a larger list
 * **Traversing** 
+
 ## Insertion of a node
 * Get a new node from memory block
 * Start from the header node
@@ -29,3 +30,10 @@ the elements are linked using pointers
 	* Insert at front
 	* Insert at end
 	* Insert at any position
+
+## Deletion of a node
+* Delete from the beginning
+* Delete from the middle
+* Delete from end
+
+
