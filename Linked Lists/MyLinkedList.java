@@ -21,13 +21,21 @@ public class MyLinkedList <T>{
 		head = new Node(data);
 	}
 	
-  // Inserting a node at the end
-	public void append(T data) {
-		Node new_node = new Node(data);
+	// Defining the method to Insert at front => O(1)
+	public void insertFront(T data) {
+		
+		Node newNode = new Node(data);
+		newNode.next = this.head.next;
+		this.head.next = newNode;
+		
+	}
+	
+	public void insertEnd(T data) {
+		Node newNode = new Node(data);
 		
 		// If LL is empty then make the new node as head
 		if (this.head.data == null) {
-			this.head = new_node;
+			this.head = newNode;
 		}
 		else {
 			// Else traverse till last node & insert the new node
@@ -35,12 +43,34 @@ public class MyLinkedList <T>{
 			while (currNode.next != null) {
 				currNode = currNode.next;
 			}
-			currNode.next = new_node;
+			currNode.next = newNode;
 		}
 	}
 	
-  // Remove a node by value
-	public void remove(T key) {
+	public void insertKey(T data, T key) {
+		Node newNode = new Node(data);
+		newNode.next = null;
+		Node temp = this.head;
+		
+		boolean status = false;
+		
+		while (temp != null) {
+			if (temp.data == key) {
+				status = true;
+				break;
+			}
+			temp = temp.next;
+		}
+		
+		if (status) {
+			newNode.next = temp.next;
+			temp.next = newNode;
+		}
+	}
+
+	
+	// Removes the value in the list
+	public void deleteKey(T key) {
 		Node currNode = this.head;
 		Node prev = null;
 		
@@ -62,11 +92,11 @@ public class MyLinkedList <T>{
 		}
 		
 		if (currNode == null) {
-			System.out.println(key + "not found");
+			System.out.println(key + " not found");
 		}
 	}
 	
-  // Remove a node by index
+	// Removes the element at certain index
 	public void pop(int index) {
 		Node currNode = this.head, prev = null;
 		
@@ -95,9 +125,47 @@ public class MyLinkedList <T>{
 			System.out.println(index + " position element not found"); 
 		}
 	}
-  
-  // Printing a list
-	public void print() {
+	
+	
+	public void concatenate(MyLinkedList<T> l2) {
+		Node l1Node = this.head;
+		Node l2Node = l2.head;
+		
+		while (l1Node.next != null) {
+			l1Node = l1Node.next;
+		}
+		
+		l1Node.next = l2Node;
+		//free(l2.head);
+	}
+	
+	public MyLinkedList<T> merge(MyLinkedList<T> l2) {
+		Node l1Node = this.head;
+		Node l2Node = l2.head;
+		
+		MyLinkedList l3 = new MyLinkedList();
+		
+		while (l1Node != null && l2Node != null) {
+			l3.insertEnd(l1Node.data);
+			l3.insertEnd(l2Node.data);
+			
+			l1Node = l1Node.next;
+			l2Node = l2Node.next;
+		}
+		
+		while (l1Node != null) {
+			l3.insertEnd(l1Node.data);
+			l1Node = l1Node.next;
+		}
+		
+		while (l2Node != null) {
+			l3.insertEnd(l2Node.data);
+			l2Node = l2Node.next;
+		}
+		return l3;
+	}
+	
+	public void printList() {
 		Node currNode = this.head;
 		
 		while (currNode != null) {
@@ -107,17 +175,5 @@ public class MyLinkedList <T>{
 		System.out.println();
 	}
 	
-  // Driver code
-	public static void main(String[] args) {
-		MyLinkedList list = new MyLinkedList();
-		
-		list.append(1);
-		list.append(2);
-		list.append(3);
-		list.append(4);
-		list.print();
-		list.remove(2);
-		list.print();
-		list.pop(1);
-		list.print();
-	}
+	
+}
