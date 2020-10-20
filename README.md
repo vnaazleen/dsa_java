@@ -21,6 +21,7 @@ Data Structures and Algorithms using Java
   * [Quick Sort](https://github.com/Shaikvaseemnaazleen/dsa_java/blob/master/Sorting/QuickSort.java)
  * [Stack](https://github.com/vnaazleen/dsa_java/tree/master/Stack)
    * [Array Implementation](https://github.com/vnaazleen/dsa_java/blob/master/Stack/StackArray.java)
+   * [Min Stack](https://github.com/vnaazleen/dsa_java/blob/master/Stack/MinStack.java)
    * [Infix to Postfix](https://github.com/vnaazleen/dsa_java/blob/master/Stack/InfixToPostfix.java)
    * [Infix to Prefix](https://github.com/vnaazleen/dsa_java/blob/master/Stack/InfixToPrefix.java)
    * [Evaluating Postfix expression](https://github.com/vnaazleen/dsa_java/blob/master/Stack/EvaluatingPostfixExpression.java)
