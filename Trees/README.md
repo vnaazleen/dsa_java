@@ -110,7 +110,7 @@ give us the expression in infix notation, postfix notation or prefix notation.
 * For a systematic traversal, it is better to visit each node (starting from the root) and its sub trees in the same fashion.
 * There are *six* such possible ways:
 
-			R
+			  R
 		      /   \
 		     T1    T2
 
