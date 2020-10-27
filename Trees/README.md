@@ -150,3 +150,41 @@ tree, which node to be deleted
 with T1 if all the nodes from T2, one by one, is inserted into
 the binary tree T1(insertion may be as internal node when it has to maintain certain property or maintain
 property or may be as external nodes)
+
+
+# Binary Search Tree
+
+* A binary tree T is termed as binary search tree(or binary sorted tree) if each
+node N of T satisfies the following property
+	* The value at N is greter than every value in the left sub-tree of N and
+	less than every value in the right sub-tree of N.
+* Searching for a data in a binary search tree is much faster than in
+arrays or linked lists.
+
+
+## Insertion of a key into a BST
+* Insertion operation on a binary dearch tree is conceptually very simple
+* It is in fact, one step more than the special operation
+* To insert a node with data, say ITEM, into a tree is to be searched starting from the root node.
+* If ITEM is found, do nothing; otherwise, ITEM is to be inserted at the dead end where search halts
+
+
+## Deletion of a key from a BST
+* **CASE 1:** N is the leave node
+* **CASE 2:** N has exactly one child
+* **CASE 3:** N has two children
+
+## Traversing a binary search tree
+* All the traversal operations for binary tree are applicable to binary search trees without any alteration.
+* It can be verified that inorder traversal on a binary search tree will give the sorted order of data in ascending order
+* If we require to sort a set of data, a binary search tree can be built with those data
+and then inorder traversal can be applied
+* This method of sorting is known as *binary sort* and this is why binary search tree is also termed as binary sorted tree
+* This sorting method is considered as one of the efficient sorting method
+* The minimum value is at the left-most node
+* The maximum value is at the right-most node
+
+## Applications of binary search trees
+* For efficient searching.
+* For sorting data in increasing order
+* For indexing records in files
