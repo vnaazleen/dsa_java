@@ -56,7 +56,7 @@ Maximum number of children that is possible for a node is known as the degree of
 	* T contains a specially designated node called the root of T, and the remaining nodes
 of T form two disjoint binary trees T1 and T2 which are called left sub-tree and the right sub-tree, respectively.
 
-## Fill binary tree
+## Full binary tree
 
 * A binary tree is a *full binary tree*, if it contains **maximum** possible number of nodes in **all levels**.
 
@@ -79,7 +79,7 @@ of internal node(degree = 2), then n0 = n2 + 1
 * Height of a complete binary tree with n number of nodes is [log(n+1) base 2]
 
 
-# Array representation of binary tree
+## Array representation of binary tree
 * The root is at location 1.
 * For any node with index i, 1 < i <= n, (for some n)
 	* PARENT(i) = [i/2] (For the node when i=1, there is no parent)
@@ -90,7 +90,7 @@ of internal node(degree = 2), then n0 = n2 + 1
 	* Size (max) = 2 ** n - 1
 	* Size (min) = 2 ** [log(n+1) base 2] - 1
 
-# Operations on Trees
+## Operations on Trees
 
 * Traversal --> To visit all the nodes in a binary tree.
 * Insertion --> To include a node into an existing (may be empty) binary tree.
@@ -120,3 +120,33 @@ give us the expression in infix notation, postfix notation or prefix notation.
 	* T2 T1 R (mirror replica of R T1 T2)
 	* T2 R T1 (mirror replica of T1 R T2)
 	* R T2 T1 (mirror replica of T1 T2 R)
+	
+## Pre-order binary tree traversal
+* Visit the root node R.
+* Traverse the left sub-tree of R in preorder
+* Traverse the right sub-tree of R in preorder
+
+## In-order binary tree traversal
+* Traverse the left sub-tree of R in inorder
+* Visit the root node R
+* Traverse the right sub-tree of R in order
+
+## Insertion operation
+
+* To search for the existence of a node in the given binary tree
+after which an insertion to be made, and
+* To establish a link for the new node.
+
+
+## Deletion operation
+
+* To search for the existence of a node in the the given binary 
+tree, which node to be deleted
+* To adjust the links among parent and child nodes of the deleted node
+
+
+## Merging operation
+* Suppose, T1 and T2 are two binary trees, T2 can be merged 
+with T1 if all the nodes from T2, one by one, is inserted into
+the binary tree T1(insertion may be as internal node when it has to maintain certain property or maintain
+property or may be as external nodes)
