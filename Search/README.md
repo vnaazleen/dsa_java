@@ -26,7 +26,7 @@ The target element is the first element of the array, so we can stop looking imm
 ## Binary Search
 
 * Start in the middle and move left or right depending on what we’re looking for, if our array of items is sorted.
-* This is called binary search, since we can divide our problem in two with each step.
+* This is called binary search, since we can divide our problem in half with each step.
 
 #### Worst-case scenario:
 
