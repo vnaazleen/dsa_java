@@ -69,6 +69,57 @@ public class DoublyLinkedList<T> {
         newNode.prev = node;
     } 
 
+    /* Delete a node from front */
+    void deleteFront () {
+        if (head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+
+        if (head.next == null) {
+            head = null;
+        }
+
+        head.next.prev = null;
+        head = head.next;
+    }
+
+    /* Delete a node from the end*/
+    void deleteEnd () {
+        if (head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+
+        if (head.next == null) {
+            head = null;
+        }
+
+        Node node = head;
+        while (node.next.next != null) {
+            node = node.next;
+        }
+        node.next = null;
+    }
+
+    /* Delete a particular index node */
+    void deleteKey (int index) {
+        int i = 0;
+        Node node = head;
+        while (i < index && node != null) {
+            node = node.next;
+            i += 1;
+        }
+
+        if (node == null) { 
+            System.out.println("Invalid index!"); 
+            return;
+        }
+
+        node.next.next.prev = node;
+        node.next = node.next.next;
+    }
+
     /* printing doubly linked list */
     void print() {
         Node node;
@@ -86,7 +137,11 @@ public class DoublyLinkedList<T> {
         dll.insertFront(1);
         dll.insertEnd(6);
         dll.insertEnd(7);
-        dll.insertAt(2, 3);
-        dll.print(); // 1 -> 2 -> 4 -> 3 -> 5 -> 6 -> 7   
+        dll.insertAt(1, 3);
+        dll.print(); // 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7  
+        dll.insertAt(1, 3);
+        dll.print(); // 1 -> 2 -> 3 -> 3 -> 4 -> 5 -> 6 -> 7  
+        dll.deleteKey(1);
+        dll.print(); // 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7   
     }
 }
