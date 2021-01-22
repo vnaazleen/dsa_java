@@ -29,6 +29,7 @@ Data Structures and Algorithms using Java
  * [Queue](https://github.com/vnaazleen/dsa_java/blob/master/Queue/)
    * [Array Implementation](https://github.com/vnaazleen/dsa_java/blob/master/Queue/Queue.java)
    * [Circular Queue](https://github.com/vnaazleen/dsa_java/blob/master/Queue/CircularQueue.java)
+   * [Simulation: Hot Potato](https://github.com/vnaazleen/dsa_java/blob/master/Queue/HotPotato.java)
  * [Linked List](https://github.com/vnaazleen/dsa_java/tree/master/Linked%20Lists)
    * [Singly Linked List](https://github.com/vnaazleen/dsa_java/blob/master/Linked%20Lists/MyLinkedList.java)
    * [Doubly Linked List with Head](https://github.com/vnaazleen/dsa_java/blob/master/Linked%20Lists/DoublyLinkedList.java)
