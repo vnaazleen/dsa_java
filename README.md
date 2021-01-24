@@ -33,6 +33,7 @@ Data Structures and Algorithms using Java
    * [Simulation: Hot Potato](https://github.com/vnaazleen/dsa_java/blob/master/Queue/HotPotato.java)
  * [Linked List](https://github.com/vnaazleen/dsa_java/tree/master/Linked%20Lists)
    * [Singly Linked List](https://github.com/vnaazleen/dsa_java/blob/master/Linked%20Lists/MyLinkedList.java)
+   * [Circular Linked List](https://github.com/vnaazleen/dsa_java/blob/master/Linked%20Lists/CircularLinkedList.java)
    * [Doubly Linked List with Head](https://github.com/vnaazleen/dsa_java/blob/master/Linked%20Lists/DoublyLinkedList.java)
    * [Doubly Linked List with Head & Tail](https://github.com/vnaazleen/dsa_java/blob/master/Linked%20Lists/DoublyLinkedListDemo.java)
    * [Applications](https://github.com/vnaazleen/dsa_java/tree/master/Linked%20Lists/Applications)
