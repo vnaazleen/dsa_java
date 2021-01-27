@@ -3,6 +3,7 @@ Data Structures and Algorithms using Java
 
 ## Assigments
  * [Assignment-1](https://github.com/vnaazleen/dsa_java/tree/master/Assignments/Assignment1)
+ * [Assignment-2](https://github.com/vnaazleen/dsa_java/blob/master/Assignments/Assignment%202.pdf)
 
 ## Table of contents
 
