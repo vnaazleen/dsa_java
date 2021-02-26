@@ -40,3 +40,5 @@ Data Structures and Algorithms using Java
    * [Applications](https://github.com/vnaazleen/dsa_java/tree/master/Linked%20Lists/Applications)
       * [Josephus circle](https://github.com/vnaazleen/dsa_java/blob/master/Linked%20Lists/Applications/Josephus.java)
       * [Polynomial](https://github.com/vnaazleen/dsa_java/blob/master/Linked%20Lists/Applications/Polynomial.java)
+* [Trees](https://github.com/vnaazleen/dsa_java/blob/master/Trees/)
+  * [BinaryTree (Insertion, Traversals, Height)](https://github.com/vnaazleen/dsa_java/blob/master/Trees/BinaryTree.java)
