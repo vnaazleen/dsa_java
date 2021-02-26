@@ -53,7 +53,7 @@ public class DirectedGraphUsingAdjMatrix {
         ^    ^    
         |    | 
         3 <- 4
-    Adjacency list representation:
+    Adjacency matrix representation:
           1  2  3  4
         1 0  1  1  0
         2 0  0  0  0
