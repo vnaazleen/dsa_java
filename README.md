@@ -42,3 +42,6 @@ Data Structures and Algorithms using Java
       * [Polynomial](https://github.com/vnaazleen/dsa_java/blob/master/Linked%20Lists/Applications/Polynomial.java)
 * [Trees](https://github.com/vnaazleen/dsa_java/blob/master/Trees/)
   * [BinaryTree (Insertion, Traversals, Height)](https://github.com/vnaazleen/dsa_java/blob/master/Trees/BinaryTree.java)
+* [Graphs](https://github.com/vnaazleen/dsa_java/tree/master/Graphs)
+  * [Representation of directed graph using adjacency matrix](https://github.com/vnaazleen/dsa_java/blob/master/Graphs/DirectedGraphUsingAdjMatrix.java)
+  * [Representation of undirected graph using adjacency matrix](https://github.com/vnaazleen/dsa_java/blob/master/Graphs/UndirectedGraphUsingAdjMatrix.java)
