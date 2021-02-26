@@ -45,3 +45,5 @@ Data Structures and Algorithms using Java
 * [Graphs](https://github.com/vnaazleen/dsa_java/tree/master/Graphs)
   * [Representation of directed graph using adjacency matrix](https://github.com/vnaazleen/dsa_java/blob/master/Graphs/DirectedGraphUsingAdjMatrix.java)
   * [Representation of undirected graph using adjacency matrix](https://github.com/vnaazleen/dsa_java/blob/master/Graphs/UndirectedGraphUsingAdjMatrix.java)
+  * [Representation of directed graph using adjacency list](https://github.com/vnaazleen/dsa_java/blob/master/Graphs/DirectedGraphUsingAdjList.java)
+  * [Representation of undirected graph using adjacency list](https://github.com/vnaazleen/dsa_java/blob/master/Graphs/UndirectedGraphUsingAdjList.java)
