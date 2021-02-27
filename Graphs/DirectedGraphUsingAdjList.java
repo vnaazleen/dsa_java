@@ -5,8 +5,8 @@ import java.util.LinkedList;
  * 
  * Author: Shaik Vaseem Naazleen
  * email: shaikvaseemnaazleen@gmail.com
- * Program: BFS on directed graph
- * Operations: addEdge, BFS
+ * Program: DFS and BFS on directed graph
+ * Operations: addEdge, dfs, bfs
  */
 
 public class DirectedGraphUsingAdjList {
@@ -25,6 +25,35 @@ public class DirectedGraphUsingAdjList {
 
     void addEdge(int start, int end) {
         adjList[start].add(end);
+    }
+
+    void dfs(int start) {
+        boolean[] visited = new boolean[nodes];
+
+        dfTraversal(start, visited);
+        for(int i = 1; i < nodes; i++) {
+            if(!visited[i]) {
+                dfTraversal(i, visited);
+            }
+        }
+
+        System.out.println();
+    }
+
+    
+
+    private void dfTraversal(int start, boolean[] visited) {
+        visited[start] = true;
+        System.out.print(start + " ");
+
+        Iterator<Integer> itr = adjList[start].listIterator();
+        while( itr.hasNext()) {
+            int neighbour = itr.next();
+            if(!visited[neighbour]) {
+                dfTraversal(neighbour, visited);
+            }
+        }
+        
     }
 
     void bfs(int start, boolean[] visited) {
@@ -54,7 +83,7 @@ public class DirectedGraphUsingAdjList {
 
 		}
 
-        for (int i = 0; i < nodes; i++) {
+        for (int i = 1; i < nodes; i++) {
             if(!visited[i]) {
                 bfs(i, visited);
             }
@@ -63,21 +92,31 @@ public class DirectedGraphUsingAdjList {
         System.out.println();
     }
 
-    
-
     public static void main(String[] args) {
         DirectedGraphUsingAdjList g = new DirectedGraphUsingAdjList(10);
         
-		g.addEdge(0, 1);
-		g.addEdge(0, 9);
-		g.addEdge(2, 3);
-		g.addEdge(2, 4);
-		g.addEdge(3, 5);
-		g.addEdge(3, 6);
-		g.addEdge(4, 7);
-		g.addEdge(4, 8);
+		g.addEdge(1, 2);
+        g.addEdge(1, 4);
+        g.addEdge(2, 5);
+        g.addEdge(2, 6);
+        g.addEdge(4, 7);
+        g.addEdge(4, 8);
+        g.addEdge(3, 9);
+        g.addEdge(3, 4);
+        g.addEdge(4, 3);
 
+        System.out.println("DFS order:");
+        g.dfs(1);
         System.out.println("BFS order:");
-        g.bfs(0, new boolean[10]);
+        g.bfs(1, new boolean[10]);
+
+        /*
+        Output:
+        
+        DFS order:
+        1 2 5 6 4 7 8 3 9
+        BFS order:
+        1 2 4 5 6 7 8 3 9
+        */
     }
 }
