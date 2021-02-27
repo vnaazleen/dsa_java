@@ -95,7 +95,7 @@ public class DirectedGraphUsingAdjList {
     public static void main(String[] args) {
         DirectedGraphUsingAdjList g = new DirectedGraphUsingAdjList(10);
         
-		g.addEdge(1, 2);
+	g.addEdge(1, 2);
         g.addEdge(1, 4);
         g.addEdge(2, 5);
         g.addEdge(2, 6);
