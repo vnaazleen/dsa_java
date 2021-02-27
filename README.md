@@ -43,4 +43,4 @@ Data Structures and Algorithms using Java
 * [Trees](https://github.com/vnaazleen/dsa_java/blob/master/Trees/)
   * [BinaryTree (Insertion, Traversals, Height)](https://github.com/vnaazleen/dsa_java/blob/master/Trees/BinaryTree.java)
 * [Graphs](https://github.com/vnaazleen/dsa_java/tree/master/Graphs)
-  * [BFS on directed graph represented using adj list](https://github.com/vnaazleen/dsa_java/blob/master/Graphs/DirectedGraphUsingAdjList.java)
+  * [BFS & DFS on directed graph represented using adj list](https://github.com/vnaazleen/dsa_java/blob/master/Graphs/DirectedGraphUsingAdjList.java)
