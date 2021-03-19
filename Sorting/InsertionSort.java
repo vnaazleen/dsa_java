@@ -2,17 +2,20 @@ import java.util.Scanner;
 
 public class InsertionSort {
     public static void insertionSort (int[] a) {
-        int temp, ind, n = a.length;
+        int temp, j, n = a.length;
         // Loop through the array
-        for (int i = 0; i < n; ++i) {
-            ind = i;
-            for (int j = i - 1; j >= 0; --j) {
-                if (a[j] > a[ind]) {
-                    temp = a[j];
-                    a[j] = a[ind];
-                    a[ind] = temp;
-                    ind = j;
+        for (int i = 1; i < n; ++i) {
+            temp = a[i];
+            for (j = i - 1; j >= 0; --j) {
+                if (a[j] > temp) {
+                    a[j+1] = a[j];
                 }
+                else{
+                    break;
+                }
+            }
+            if(i!=j-1){
+                a[j+1] = temp;
             }
         }
     }
