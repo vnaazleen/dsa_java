@@ -12,7 +12,7 @@ import java.util.regex.*;
 3: Print the element at the front of the queue.
 */
 
-public class StackUsingTwoQueues {
+public class QueueUsingTwoStacks {
 
     public static void main(String[] args) {
         
