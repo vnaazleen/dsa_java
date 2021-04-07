@@ -1,4 +1,4 @@
-# Problem statement: https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle/problem
+// Problem statement: https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle/problem
 
 import java.io.*;
 import java.math.*;
